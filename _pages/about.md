@@ -15,16 +15,6 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 awards: true # includes a list of hornors and awards
 services: true # includes a list of services
 social: true # includes social icons at the bottom of the page
-
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
 ---
 I'm a third-year Ph.D. candidate at [Beijing Institute of Technology](https://bit.edu.cn/), China, supervised by [Prof. Ying Fu](https://ying-fu.github.io/) and [Prof. Chenghu Zhou](https://people.ucas.ac.cn/~0001347). Before doctoral study, I obtained my B.S. in Computer Science from [Beijing Institute of Technology](https://bit.edu.cn/) in 2022.
 
