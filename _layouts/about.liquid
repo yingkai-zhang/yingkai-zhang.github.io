@@ -41,9 +41,9 @@ layout: default
     <div class="clearfix">{{ content }}</div>
 
     <!-- News -->
-    {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+    {% if page.news and site.announcements.enabled %}
+      <h2 style="margin-top: 7px; margin-bottom: 5px;">
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
@@ -58,10 +58,31 @@ layout: default
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+      <h2 style="margin-top: 7px; margin-bottom: 5px;">
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
       </h2>
       {% include selected_papers.liquid %}
+    {% endif %}
+
+    <!-- Hornors and Awards -->
+    {% if page.awards %}
+      <h2 style="margin-top: 10px; margin-bottom: 10px;">
+        Hornors and Awards
+      </h2>
+        <ul style="padding-left: 1.2em;">
+          <li>Huarui Shiji Scholarship, Beijing Institute of Technology, 2025</li>
+          <li>Excellent Student, Beijing Institute of Technology, 2025</li>
+        </ul>  
+    {% endif %}
+
+    <!-- Services -->
+    {% if page.awards %}
+      <h2 style="margin-top: 10px; margin-bottom: 10px;">
+        Services
+      </h2>
+        <ul style="padding-left: 1.2em;">
+          <li>Reviewer for Journals: TIP, Displays, CJE</li>
+        </ul>  
     {% endif %}
 
     <!-- Social -->
