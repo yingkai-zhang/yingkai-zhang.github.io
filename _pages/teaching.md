@@ -7,6 +7,6 @@ nav: true
 nav_order: 6
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+* Teaching assistant for Computer Vision (2025 - 2026 Fall), Beijing Institute of Technology
 
-Organize your courses by years, topics, or universities, however you like!
+* Teaching assistant for Artificial Intelligence and Computational Science (2025 - 2026 Fall), Beijing Institute of Technology
