@@ -115,6 +115,7 @@
       year={2026},
       selected={true},
       arxiv="2602.11545",
+      code="https://github.com/yingkai-zhang/MFdiff",
       preview="2026-TST.jpg",
       bibtex_show={true},
       abstract="Positron emission tomography (PET) offers powerful functional imaging but involves radiation exposure. Efforts to reduce this exposure by lowering the radiotracer dose or scan time can degrade image quality. While using magnetic resonance (MR) images with clearer anatomical information to restore standard-dose PET (SPET) from low-dose PET (LPET) is a promising approach, it faces challenges with the inconsistencies in the structure and texture of multi-modality fusion, as well as the mismatch in out-of-distribution (OOD) data. In this paper, we propose a supervise-assisted multi-modality fusion diffusion model (MFdiff) for addressing these challenges for high-quality PET restoration. Firstly, to fully utilize auxiliary MR images without introducing extraneous details in the restored image, a multi-modality feature fusion module is designed to learn an optimized fusion feature. Secondly, using the fusion feature as an additional condition, high-quality SPET images are iteratively generated based on the diffusion model. Furthermore, we introduce a two-stage supervise-assisted learning strategy that harnesses both generalized priors from simulated in-distribution datasets and specific priors tailored to in-vivo OOD data. Experiments demonstrate that the proposed MFdiff effectively restores high-quality SPET images from multi-modality inputs and outperforms state-of-the-art methods both qualitatively and quantitatively."
@@ -126,6 +127,8 @@
   booktitle=cvpr,
   year={2026},
   selected={true},
+  arxiv="2603.07918",
+  code="https://github.com/yingkai-zhang/UAFL",
   preview="2026-CVPR.jpg",
   bibtex_show={true},
   abstract="Unregistered hyperspectral image (HSI) super-resolution (SR) typically aims to enhance a low-resolution HSI using an unregistered high-resolution reference image. In this paper, we propose an unmixing-based fusion framework that decouples spatial-spectral information to simultaneously mitigate the impact of unregistered fusion and enhance the learnability of SR models. Specifically, we first utilize singular value decomposition for initial spectral unmixing, preserving the original endmembers while dedicating the subsequent network to enhancing the initial abundance map. To leverage the spatial texture of the unregistered reference, we introduce a coarse-to-fine deformable aggregation module, which first estimates a pixel-level flow and a similarity map using a coarse pyramid predictor. It further performs fine sub-pixel refinement to achieve deformable aggregation of the reference features. The aggregative features are then refined via a series of spatial-channel abundance cross-attention blocks. Furthermore, a spatial-channel modulated fusion module is presented to merge encoder-decoder features using dynamic gating weights, yielding a high-quality, high-resolution HSI. Experimental results on simulated and real datasets confirm that our proposed method achieves state-of-the-art super-resolution performance. The code will be available at \url{https://github.com/yingkai-zhang/UAFL}."
