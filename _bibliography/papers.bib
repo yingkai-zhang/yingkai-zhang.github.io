@@ -76,6 +76,8 @@
 
 @string{tst = {Tsinghua Science and Technology}}
 
+@string{acait = {Asian Conference on Artificial Intelligence Technology}}
+
 @inproceedings{fu2022reinforcement,
   title={Reinforcement learning based plug-and-play method for hyperspectral image reconstruction},
   author={Fu, Ying and Zhang, Yingkai},
@@ -162,4 +164,26 @@
   preview="2026-CVPR.jpg",
   bibtex_show={true},
   abstract="Unregistered hyperspectral image (HSI) super-resolution (SR) typically aims to enhance a low-resolution HSI using an unregistered high-resolution reference image. In this paper, we propose an unmixing-based fusion framework that decouples spatial-spectral information to simultaneously mitigate the impact of unregistered fusion and enhance the learnability of SR models. Specifically, we first utilize singular value decomposition for initial spectral unmixing, preserving the original endmembers while dedicating the subsequent network to enhancing the initial abundance map. To leverage the spatial texture of the unregistered reference, we introduce a coarse-to-fine deformable aggregation module, which first estimates a pixel-level flow and a similarity map using a coarse pyramid predictor. It further performs fine sub-pixel refinement to achieve deformable aggregation of the reference features. The aggregative features are then refined via a series of spatial-channel abundance cross-attention blocks. Furthermore, a spatial-channel modulated fusion module is presented to merge encoder-decoder features using dynamic gating weights, yielding a high-quality, high-resolution HSI. Experimental results on simulated and real datasets confirm that our proposed method achieves state-of-the-art super-resolution performance. The code will be available at \url{https://github.com/yingkai-zhang/UAFL}."
+}
+
+@inproceedings{zhang2026unified,
+  title={Unified RAW Image Exposure Correction and Restoration via Linear Illumination and Frequency-Adaptive Enhancement},
+  author={Zhang, Yingkai and Zou, Yunhao and Fu, Ying},
+  booktitle=acait,
+  year={2026},
+  arxiv="2610.28191",
+  preview="2026-ACAIT.jpg",
+  bibtex_show={true},
+  abstract="Incorrect exposure degrades both image brightness and recoverable scene detail. Existing sRGB-based correction methods are limited by the non-linear image signal processing pipeline, whereas RAW-based methods are usually developed for a single degradation type, such as low-light denoising or high-light recovery. In this paper, we focus on joint exposure correction and restoration directly in the RAW domain and propose a unified RAW Image Exposure Correction and Restoration (RIECR) framework for both under- and over-exposed images. RIECR decomposes the problem into two coupled subproblems that follow the RAW imaging model: linear illumination correction and residual degradation restoration. First, a Linear Illumination Correction Network (LICN) estimates exposureaware linear gains by using channel-specific RAW cues. It exploits the high signal-to-noise ratio of Green channels for robust brightening and the relatively unsaturated Red/Blue responses for high-light darkening. Second, a dual-branch Frequency-based Enhancement Network (FEN) restores the remaining degradation with a Frequency Dynamic Convolution (FDC) module. FDC decomposes convolutional responses into low- and highfrequency components and adaptively suppresses amplified noise or recovers clipped textures according to the exposure context. We further build a real paired RAW benchmark containing 223 scenes and 1,784 pairs covering complex multi-exposure errors. Experiments against sixteen state-of-the-art methods show that RIECR achieves state-of-the-art performance on real RAW exposure correction."
+}
+
+@inproceedings{Liu2026manifold,
+  title={Manifold Prior Guided Deep Unfolding for Hyperspectral Image Reconstruction},
+  author={Liu, Shuqi, Zhang, Yingkai and Gu, Lin and Zhang, Tao and Fu, Ying},
+  booktitle=nips,
+  year={2026},
+  arxiv="2610.27874",
+  preview="2026-NeurIPS.jpg",
+  bibtex_show={true},
+  abstract="Hyperspectral Image (HSI) reconstruction has made substantial progress with the deep unfolding framework by decomposing the problem into a projection module and a denoiser module. Nevertheless, existing methods still exhibit limitations of insufficient matching with HSI data. The issues lie in two aspects: 1) the dataconsistency projection module applies a fixed gradient descent step while ignoring the spectral content adaptivity of HSI; 2) the denoiser module either suffers from high computational complexity or is limited to the local receptive field, failing to efficiently capture the global spatial-spectral dependencies. In this paper, we propose a deep unfolding framework centered on a two-stage manifold learning strategy to obtain a degradation-free structural prior, which is then strategically injected into both the projection and denoiser modules. In the data-consistency projection, a prior-guided spectral weight mechanism is introduced to adaptively modulate the weight of spectral band. In the denoiser module, a manifold-guided Mamba is proposed to achieve the structure-aware extraction of spatial-spectral features through prior modulation. Quantitative and visual comparisons on synthetic and real-world datasets show that the proposed method significantly outperforms existing state-ofthe-art approaches, while maintaining the structural interpretability of the unfolding framework. The code is available at https://github.com/SqLiu67/MPG-DU."
 }
